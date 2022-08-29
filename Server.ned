@@ -6,6 +6,3 @@ simple Server
     gates:
         input server_client[];							// (Server Module) Gate <- (Client Modules) 
 }
-
-
-
