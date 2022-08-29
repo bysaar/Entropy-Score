@@ -1,0 +1,83 @@
+version 2
+run General-0-20220615-22:35:08-9736
+attr configname General
+attr datetime 20220615-22:35:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 9736
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 69
+param **.server.thresh_packet_score 15
+param **.num_normal_clients 50
+param **.num_ddos_clients 15
+param **.num_flash_crowd_clients 40
+param **.norm[*].client_type 0
+param **.norm[*].ip_addr "\"10.1.1.\""
+param **.norm[*].num_requests 8
+param **.ddos[*].client_type 1
+param **.ddos[*].ip_addr "\"10.1.\""
+param **.ddos[*].num_requests 54
+param **.fc[*].client_type 2
+param **.fc[*].ip_addr "\"10.\""
+param **.fc[*].num_requests 20
+
+scalar Network.server "System entropy phase NORMAL" 2.2062114187
+scalar Network.server "probability group #0 phase NORMAL" 0.22
+scalar Network.server "probability group #1 phase NORMAL" 0.12
+scalar Network.server "probability group #2 phase NORMAL" 0.26
+scalar Network.server "probability group #3 phase NORMAL" 0.3
+scalar Network.server "probability group #4 phase NORMAL" 0.1
+scalar Network.server "System entropy phase FC" 5.2016517035461
+scalar Network.server "probability group #0 phase FC" 0.073333333333333
+scalar Network.server "probability group #1 phase FC" 0.04
+scalar Network.server "probability group #2 phase FC" 0.086666666666667
+scalar Network.server "probability group #3 phase FC" 0.1
+scalar Network.server "probability group #4 phase FC" 0.033333333333333
+scalar Network.server "probability group #5 phase FC" 0.016666666666667
+scalar Network.server "probability group #6 phase FC" 0.016666666666667
+scalar Network.server "probability group #7 phase FC" 0.016666666666667
+scalar Network.server "probability group #8 phase FC" 0.016666666666667
+scalar Network.server "probability group #9 phase FC" 0.016666666666667
+scalar Network.server "probability group #10 phase FC" 0.016666666666667
+scalar Network.server "probability group #11 phase FC" 0.016666666666667
+scalar Network.server "probability group #12 phase FC" 0.016666666666667
+scalar Network.server "probability group #13 phase FC" 0.016666666666667
+scalar Network.server "probability group #14 phase FC" 0.016666666666667
+scalar Network.server "probability group #15 phase FC" 0.016666666666667
+scalar Network.server "probability group #16 phase FC" 0.016666666666667
+scalar Network.server "probability group #17 phase FC" 0.016666666666667
+scalar Network.server "probability group #18 phase FC" 0.016666666666667
+scalar Network.server "probability group #19 phase FC" 0.016666666666667
+scalar Network.server "probability group #20 phase FC" 0.016666666666667
+scalar Network.server "probability group #21 phase FC" 0.016666666666667
+scalar Network.server "probability group #22 phase FC" 0.016666666666667
+scalar Network.server "probability group #23 phase FC" 0.016666666666667
+scalar Network.server "probability group #24 phase FC" 0.016666666666667
+scalar Network.server "probability group #25 phase FC" 0.016666666666667
+scalar Network.server "probability group #26 phase FC" 0.016666666666667
+scalar Network.server "probability group #27 phase FC" 0.016666666666667
+scalar Network.server "probability group #28 phase FC" 0.016666666666667
+scalar Network.server "probability group #29 phase FC" 0.016666666666667
+scalar Network.server "probability group #30 phase FC" 0.016666666666667
+scalar Network.server "probability group #31 phase FC" 0.016666666666667
+scalar Network.server "probability group #32 phase FC" 0.016666666666667
+scalar Network.server "probability group #33 phase FC" 0.016666666666667
+scalar Network.server "probability group #34 phase FC" 0.016666666666667
+scalar Network.server "probability group #35 phase FC" 0.016666666666667
+scalar Network.server "probability group #36 phase FC" 0.016666666666667
+scalar Network.server "probability group #37 phase FC" 0.016666666666667
+scalar Network.server "probability group #38 phase FC" 0.016666666666667
+scalar Network.server "probability group #39 phase FC" 0.016666666666667
+scalar Network.server "probability group #40 phase FC" 0.016666666666667
+scalar Network.server "probability group #41 phase FC" 0.016666666666667
+scalar Network.server "probability group #42 phase FC" 0.016666666666667
+scalar Network.server "probability group #43 phase FC" 0.016666666666667
+scalar Network.server "probability group #44 phase FC" 0.016666666666667
+
