@@ -102,14 +102,14 @@ There are slight differences in the group's probability distribution, we assume 
 
 We would like to note that one of the article's assumptions (equation 2) is that DDoS attackers have IP addresses that are more random than normal clients, so we assume that 3 uniform distributed groups created are reflecting more randomness and do not necessarily contradict the article's results. In addition, the behavior of our graphs matches the article’s results.
 
-<img width="530" alt="image" src="https://user-images.githubusercontent.com/90688449/187320131-c6414a8e-a74d-4b21-a1fc-1463a11acb6b.png">
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/90688449/187320302-1b026004-d15b-42de-9e90-120ab673c3e0.png">
 
 > <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
 
 From the graphs, it can be shown that the entropy values are not equal.
 Since the amount and type of requests during the 30sec interval were not specified, we decided to measure the entropy values at the end of each phase. In our opinion, this is the cause of the difference in value, although the behavior of the graphs is the same.
 
-<img width="244" alt="image" src="https://user-images.githubusercontent.com/90688449/187319732-f72721f0-859e-4723-997a-cdeb20228edd.png">
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/90688449/187320230-7c1b8b9e-4278-48bb-b34b-bdb7cd8a89ce.png">
 
 > <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
 
