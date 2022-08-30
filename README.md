@@ -96,12 +96,24 @@ The simulation is divided into four different parts:
 
 <img width="618" alt="image" src="https://user-images.githubusercontent.com/90688449/187318113-27c4980c-5a9c-48a2-a120-b0a7e446760b.png">
 
->
+> <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
 
-<img width="615" alt="image" src="https://user-images.githubusercontent.com/90688449/187317811-16774e27-4f81-4266-8f2f-98135b3e067f.png">
+There are slight differences in the group's probability distribution, we assume that this is a result of our implementation and the fact that the creation of groups and randomness of IP addresses are not specified in the article. In our simulation, 3 DDoS groups were created instead of 2 in the article results.
 
-> <sup>*</sup> The article's results are shown on the left side, our results are shown in right.
+We would like to note that one of the article's assumptions (equation 2) is that DDoS attackers have IP addresses that are more random than normal clients, so we assume that 3 uniform distributed groups created are reflecting more randomness and do not necessarily contradict the article's results. In addition, the behavior of our graphs matches the article’s results.
 
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/90688449/187319702-c9f48dee-3243-43cf-ae24-4739c86ad925.png">
+
+> <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
+
+From the graphs, it can be shown that the entropy values are not equal.
+Since the amount and type of requests during the 30sec interval were not specified, we decided to measure the entropy values at the end of each phase. In our opinion, this is the cause of the difference in value, although the behavior of the graphs is the same.
+
+<img width="244" alt="image" src="https://user-images.githubusercontent.com/90688449/187319732-f72721f0-859e-4723-997a-cdeb20228edd.png">
+
+> <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
+
+As we expected, our results fit the article's results. The DDoS groups acquire a high packet score whereas the FC group's scores remain low.
 
 ## Conclusions
 
