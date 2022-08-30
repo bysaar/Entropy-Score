@@ -102,7 +102,7 @@ There are slight differences in the group's probability distribution, we assume 
 
 We would like to note that one of the article's assumptions (equation 2) is that DDoS attackers have IP addresses that are more random than normal clients, so we assume that 3 uniform distributed groups created are reflecting more randomness and do not necessarily contradict the article's results. In addition, the behavior of our graphs matches the article’s results.
 
-<img width="525" alt="image" src="https://user-images.githubusercontent.com/90688449/187319702-c9f48dee-3243-43cf-ae24-4739c86ad925.png">
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/90688449/187320131-c6414a8e-a74d-4b21-a1fc-1463a11acb6b.png">
 
 > <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
 
