@@ -23,7 +23,7 @@ When the attack is activated, all the sources of the attack generate massive tra
 
 - **Flash Crowd** – A flash crowd scenario is a sudden increase in traffic to a particular common server causing a dramatic growth in server load and service time. Usually occurs when a newly launched feature is causing worldwide interest.
 
-### Simulation Goal:
+### Simulation's Goal:
 The main goal of the simulation is to test the correctness and efficiency of the suggested method to differentiate between DDoS Attacks and Flash Crowd scenarios.
 
 ## Detection Algorithm
