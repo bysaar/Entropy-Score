@@ -90,7 +90,7 @@ The simulation is divided into four different parts:
 - **Third Phase - FC Scenario**: - 40 FC clients generate requests towards the server. At then end of this phase, the system's entropy value is calculated as well as the packet score values for each FC group.
 
 ### **Classification**:
-During the simulation Phase 1 is used as the learning phase of the system - since the entropy threshold should be based on the normal traffic, therefore, in a real scenario normal traffic should not cross the system's entropy threshold.
+Phase 1 is used as the learning phase of the system - since the entropy threshold should be based on the normal traffic, therefore, in a real scenario normal traffic should not cross the system's entropy threshold.
 
 For the next two phases (2,3), if the system's entropy will be higher than the threshold, then it should be either a DDoS attack or an FC scenario. The differentiation between them using the packet score calculated for each group and set the classification tag accordingly.
 
