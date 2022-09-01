@@ -75,7 +75,7 @@ The main goal of the simulation is to test the correctness and efficiency of the
 - Packet-Score threshold was statically set as 15 according to article's results.
 - Number of requests for each client is defined according to article described experiment.
 
-> The values of the parameters were taken from TABLE II. in the article.
+> The values of the parameters were taken from TABLE II. of the article.
 
 ### The Simulation:
 
