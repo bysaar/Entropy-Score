@@ -113,6 +113,18 @@ For the next two phases (2,3), if the system's entropy will be higher than the t
 
 <img width="825" alt="image" src="https://user-images.githubusercontent.com/90688449/187957429-1dbdf652-a931-4f77-862f-56216410e4c2.png">
 
+### Efficiency:
+The article's analysis:
+
+
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/90688449/187966210-c587509c-29f3-401b-8327-b13a0ae46f14.png">
+
+
+- The classification is done in the end of each phase, by traversing all the groups in the system, resulting in a space complexity O(g).
+- There were no false-positive classifications matching the low false positive rate shown above.
+
+
+
 
 ## Conclusions
 
