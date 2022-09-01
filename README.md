@@ -121,7 +121,7 @@ The article's analysis:
 
 
 - The classification is done at the end of each phase, by traversing all the groups in the system, resulting in a space complexity O(g).
-- There were no false-positive classifications matching the low false positive rate shown above.
+- There were no false-positive classifications matching the low false-positive rate shown above.
 
 
 
