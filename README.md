@@ -120,7 +120,7 @@ The article's analysis:
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/90688449/187966210-c587509c-29f3-401b-8327-b13a0ae46f14.png">
 
 
-- The classification is done in the end of each phase, by traversing all the groups in the system, resulting in a space complexity O(g).
+- The classification is done at the end of each phase, by traversing all the groups in the system, resulting in a space complexity O(g).
 - There were no false-positive classifications matching the low false positive rate shown above.
 
 
@@ -131,6 +131,5 @@ The article's analysis:
 - The algorithm method seems to be efficient and correct.
 - In order to implement the algorithm correctly, it is required to know the system's normal behavior and set the right threshold parameters.
 - In a real-time scenario, the algorithm can detect DDoS attacks in a relatively short time interval and can be used to prevent them without blocking flash crowd traffic.
-
 
 
