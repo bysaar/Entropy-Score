@@ -24,7 +24,7 @@ When the attack is activated, all the sources of the attack generate massive tra
 - **Flash Crowd** – A flash crowd scenario is a sudden increase in traffic to a particular common server causing a dramatic growth in server load and service time. Usually occurs when a newly launched feature is causing worldwide interest.
 
 ### Simulation's Goal:
-The main goal of the simulation is to test the correctness and efficiency of the suggested method to differentiate between DDoS Attacks and Flash Crowd scenarios.
+The main goal of the simulation is to test the correctness and efficiency of the suggested method to differentiate between DDoS attacks and flash crowd scenarios.
 
 ## Detection Algorithm
 - **Phase 1**: Incoming packets will be divided into groups according to 'Distance' parameter and their IP addresses.
@@ -105,13 +105,19 @@ For the next two phases (2,3), if the system's entropy will be higher than the t
 
 <img width="932" alt="image" src="https://user-images.githubusercontent.com/90688449/187957142-2d2fae15-d1be-4f81-8d92-831bd856153b.png">
 
+> The graphs verify that when non-normal groups are formed, the anomaly of the system changes.
+
 ### System's Entropy Values:
 
 <img width="933" alt="image" src="https://user-images.githubusercontent.com/90688449/187957343-420c9715-e04e-441a-8cf8-05cd0a399cc4.png">
 
+> The graph verifies the article's insight (H <sub>no attack</sub> < H <sub>DDoS Attack</sub> < H <sub>Flash Crowd</sub>).
+
 ### Packet Score Values:
 
 <img width="825" alt="image" src="https://user-images.githubusercontent.com/90688449/187957429-1dbdf652-a931-4f77-862f-56216410e4c2.png">
+
+> The graph verifies the distinguishing between traffic from a DDoS attack and a flash crowd scenario using the packet-score method.
 
 ### Efficiency:
 The article's analysis:
