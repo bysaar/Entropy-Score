@@ -2,9 +2,10 @@
 
 This project is a simulation of the detection algorithm mentioned in the article:
 
-"Entropy-Score: A Method to Detect DDoS Attack and Flash Crowd" By **THE AUTHORS**
+"Entropy-Score: A Method to Detect DDoS Attack and Flash Crowd" By Akshat Gaurav, Awadhesh Kumar Singh.
 
-The implementation done in C++ over OMNet++ framework
+The implementation done in C++ over OMNet++ framework.
+
 
 ## Overview
 The article presents a problem that many popular servers are constantly faced with, which is the inability to distinguish between legitimate flash crowd traffic as a result of a new feature being uploaded and massive incoming traffic because of a DDoS attack.
@@ -23,7 +24,7 @@ When the attack is activated, all the sources of the attack generate massive tra
 - **Flash Crowd** – A flash crowd scenario is a sudden increase in traffic to a particular common server causing a dramatic growth in server load and service time. Usually occurs when a newly launched feature is causing worldwide interest.
 
 ### Simulation Goal:
-The main goal of the simulation is to test the correctness and efficiency of the suggested method to differentiate between DDoS Attack and Flash Crowd.
+The main goal of the simulation is to test the correctness and efficiency of the suggested method to differentiate between DDoS Attacks and Flash Crowd scenarios.
 
 ## Detection Algorithm
 - **Phase 1**: Incoming packets will be divided into groups according to 'Distance' parameter and their IP addresses.
@@ -89,37 +90,35 @@ The simulation is divided into four different parts:
 - **Third Phase - FC Scenario**: - 40 FC clients generate requests towards the server. At then end of this phase, the system's entropy value is calculated as well as the packet score values for each FC group.
 
 ### **Classification**:
-#### Each group is classified according to the algorithm description.
-#### Correctness is verified by comparing the classification tag versus the pre-defined group type.
+During the simulation Phase 1 is used as the learning phase of the system - since the entropy threshold should be based on the normal traffic, therefore, in a real scenario normal traffic should not cross the system's entropy threshold.
+
+For the next two phases (2,3), if the system's entropy will be higher than the threshold, then it should be either a DDoS attack or an FC scenario. The differentiation between them using the packet score calculated for each group and set the classification tag accordingly.
+
+- Each group is classified according to the algorithm description.
+- Correctness is verified by comparing the classification tag versus the pre-defined group type (client_type variable).
 
 ## Results
 
-<img width="618" alt="image" src="https://user-images.githubusercontent.com/90688449/187318113-27c4980c-5a9c-48a2-a120-b0a7e446760b.png">
+### Probability Distributions:
 
-> <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
+<img width="935" alt="image" src="https://user-images.githubusercontent.com/90688449/187956988-a70181cc-1430-4681-b6a8-f157b699835b.png">
 
-There are slight differences in the group's probability distribution, we assume that this is a result of our implementation and the fact that the creation of groups and randomness of IP addresses are not specified in the article. In our simulation, 3 DDoS groups were created instead of 2 in the article results.
+<img width="932" alt="image" src="https://user-images.githubusercontent.com/90688449/187957142-2d2fae15-d1be-4f81-8d92-831bd856153b.png">
 
-We would like to note that one of the article's assumptions (equation 2) is that DDoS attackers have IP addresses that are more random than normal clients, so we assume that 3 uniform distributed groups created are reflecting more randomness and do not necessarily contradict the article's results. In addition, the behavior of our graphs matches the article’s results.
+### System's Entropy Values:
 
-<img width="525" alt="image" src="https://user-images.githubusercontent.com/90688449/187320302-1b026004-d15b-42de-9e90-120ab673c3e0.png">
+<img width="933" alt="image" src="https://user-images.githubusercontent.com/90688449/187957343-420c9715-e04e-441a-8cf8-05cd0a399cc4.png">
 
-> <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
+### Packet Score Values:
 
-From the graphs, it can be shown that the entropy values are not equal.
-Since the amount and type of requests during the 30sec interval were not specified, we decided to measure the entropy values at the end of each phase. In our opinion, this is the cause of the difference in value, although the behavior of the graphs is the same.
+<img width="825" alt="image" src="https://user-images.githubusercontent.com/90688449/187957429-1dbdf652-a931-4f77-862f-56216410e4c2.png">
 
-<img width="530" alt="image" src="https://user-images.githubusercontent.com/90688449/187320230-7c1b8b9e-4278-48bb-b34b-bdb7cd8a89ce.png">
-
-> <sup>*</sup> The expected results are shown on the left side (taken from the article), and our results are shown in right.
-
-As we expected, our results fit the article's results. The DDoS groups acquire a high packet score whereas the FC group's scores remain low.
 
 ## Conclusions
 
-- The algorithm method seems to be effcient and correct.
+- The algorithm method seems to be efficient and correct.
 - In order to implement the algorithm correctly, it is required to know the system's normal behavior and set the right threshold parameters.
-- In real time scenario, the algorithm can detect DDoS attacks in a relatively short time interval and can be used to prevent it without blocking FC traffic.
+- In a real-time scenario, the algorithm can detect DDoS attacks in a relatively short time interval and can be used to prevent them without blocking flash crowd traffic.
 
 
 
