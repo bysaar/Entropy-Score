@@ -1,6 +1,6 @@
 # Entropy-Score Project
 
-This project is a simulation of the detection algorithm mentioned in the article:
+This is my final project for the Simulation and Statistics In Networks course and it includes a simulation of the detection algorithm mentioned in the article:
 
 "Entropy-Score: A Method to Detect DDoS Attack and Flash Crowd" By Akshat Gaurav, Awadhesh Kumar Singh.
 
