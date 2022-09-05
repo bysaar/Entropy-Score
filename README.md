@@ -134,8 +134,8 @@ The article's analysis:
 
 ## Conclusions
 
-- The algorithm method seems to be efficient and correct.
+- The algorithm's method seems to be efficient and correct.
 - In order to implement the algorithm correctly, it is required to know the system's normal behavior and set the right threshold parameters.
-- In a real-time scenario, the algorithm can detect DDoS attacks in a relatively short time interval and can be used to prevent them without blocking flash crowd traffic.
+- In a real-time scenario, the algorithm can detect a DDoS attack in a relatively short time interval and can be used to prevent it without blocking flash crowd traffic.
 
 
