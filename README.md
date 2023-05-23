@@ -1,6 +1,6 @@
 # Entropy-Score Project
 
-Simulation and Statistics In Networks final project, based on the article:
+Simulation and Statistics In Networks - final project, based on the article:
 
 "Entropy-Score: A Method to Detect DDoS Attack and Flash Crowd" By Akshat Gaurav, Awadhesh Kumar Singh.
 
