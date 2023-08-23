@@ -4,7 +4,7 @@ Simulation and Statistics In Networks - final project, based on the article:
 
 "Entropy-Score: A Method to Detect DDoS Attack and Flash Crowd" By Akshat Gaurav, Awadhesh Kumar Singh.
 
-C++ implementation within the OMNet++ framework.
+The project involves the implementation of the concepts discussed in the article, using C++ programming within the OMNet++ framework.
 
 
 ## Overview
@@ -27,7 +27,7 @@ When the attack is activated, all the sources of the attack generate massive tra
 The main goal of the simulation is to test the correctness and efficiency of the suggested method to differentiate between DDoS attacks and flash crowd scenarios.
 
 ## Detection Algorithm
-- **Phase 1**: Incoming packets will be divided into groups according to 'Distance' parameter and their IP addresses.
+- **Phase 1**: Incoming packets will be divided into groups according to the 'Distance' parameter and their IP addresses.
 
 - **Phase 2**: Entropy calculation of the system which is done according to Equation 1. in the article:
 
@@ -46,7 +46,7 @@ The main goal of the simulation is to test the correctness and efficiency of the
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; **Else**, further distinguishing between DDoS and FC traffic is required.
 
-- **Phase 4**: Score of each group is calculated and compared with Packet Score Threshold (T):
+- **Phase 4**: The score of each group is calculated and compared with the Packet Score Threshold (T):
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; **If** the score is less than the threshold, then traffic is classified as Flash Crowd.
 
