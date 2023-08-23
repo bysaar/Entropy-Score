@@ -4,7 +4,7 @@ Simulation and Statistics In Networks - final project, based on the article:
 
 "Entropy-Score: A Method to Detect DDoS Attack and Flash Crowd" By Akshat Gaurav, Awadhesh Kumar Singh.
 
-The implementation done in C++ over OMNet++ framework.
+C++ implementation within the OMNet++ framework.
 
 
 ## Overview
